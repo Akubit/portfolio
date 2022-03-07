@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "TBF";
+  font-style: normal;
+  font-weight: normal;
+  src: local("The Bold Font Bold"), url("./theboldfont.woff") format("woff");
+}

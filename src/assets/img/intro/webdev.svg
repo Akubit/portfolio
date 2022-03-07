@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104 30">
+<defs>
+<style>
+.cls-1,
+.cls-2,
+.cls-3,
+.cls-4{
+    font-size:25px;
+    stroke:#1d1d1b;
+    stroke-miterlimit:10;
+    stroke-width:0.5px;
+    font-family:TheBoldFont, The Bold Font;}
+.cls-3{
+    fill:#b90047;
+}
+.cls-2{
+    fill:#00b9a1;
+}
+.cls-1{
+    fill:#ffe23f;
+}
+.cls-4 {
+    fill:#fff;
+    stroke-width:1px
+}
+</style>
+</defs>
+<g id="Calque_2" data-name="Calque 2">
+<text class="cls-1" transform="translate(2 26)">WEB DEV</text>
+<text class="cls-2" transform="translate(3 24)">WEB DEV</text>
+<text class="cls-3" transform="translate(4 22)">WEB DEV</text>
+<text class="cls-4" transform="translate(5 20)">WEB DEV</text>
+</g>
+</svg>

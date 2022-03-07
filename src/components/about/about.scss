@@ -1,0 +1,118 @@
+@import "../../assets/css/Global.scss";
+
+.about {
+  padding: 5% 5% 2.5% 10%;
+
+  &-picture {
+    float: left;
+    text-align: center;
+    padding-bottom: 50px;
+
+    img {
+      max-width: 350px;
+      margin: 25px;
+      border: 5px solid $black;
+      box-shadow: -10px 10px 0 $coral, -15px 15px 0 $black, -15px 5px $black,
+        -5px 15px $black, -25px 25px 0 $sun, -30px 30px 0 $black,
+        -30px 20px $black, -20px 30px $black, -40px 40px 0 $lagoon,
+        -45px 45px 0 $black, -45px 35px $black, -35px 45px $black;
+      margin-bottom: 45px;
+      grid-area: photo;
+      @include mobile {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &-description {
+    padding: 2.5em 25px 0;
+    line-height: 1.5em;
+    letter-spacing: 0.2em;
+    p::first-letter {
+      font-weight: bold;
+    }
+    * + * {
+      padding-top: 2em;
+    }
+    span {
+      color: $coral;
+    }
+  }
+
+  &-information {
+    margin-top: 5em;
+    display: grid;
+    grid-column-gap: 3em;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-content: center;
+    li {
+      list-style-type: "> ";
+      line-height: 2em;
+    }
+    ul {
+      margin-bottom: 1em;
+      width: 80%;
+      margin: 0 auto;
+    }
+    h2 {
+      padding: 10px;
+      text-align: center;
+      border-top: 3px solid $lagoon;
+      border-bottom: 3px solid $coral;
+      //   text-shadow: -3px 3px $lagoon;
+      margin: 1em auto;
+    }
+    h4 {
+      width: 90%;
+      margin: 2em auto 1em;
+    }
+    &-work {
+      .jobs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        margin-bottom: 3em;
+        li {
+          width: 25%;
+          filter: grayscale(1) opacity(0.5);
+          transition: all 0.3s;
+          list-style: none;
+          &:hover {
+            filter: grayscale(0) opacity(1);
+          }
+          + li {
+            margin-left: 5em;
+          }
+        }
+        img {
+          width: 100%;
+          max-width: 200px;
+        }
+      }
+    }
+  }
+  &-quote {
+    margin-top: 5em;
+    padding: 2em;
+    quotes: "\00AB""\00BB";
+    text-align: center;
+    background: linear-gradient(
+      90deg,
+      $lagoon 33%,
+      saturate(darken($sun, 2), 45%) 36%,
+      $coral 66%
+    );
+    background-clip: text;
+    color: transparent;
+    q {
+      font-size: 1.5rem;
+      color: transparent;
+    }
+    &-first {
+      font-weight: bold;
+      color: transparent;
+      font-size: 2em;
+    }
+  }
+}

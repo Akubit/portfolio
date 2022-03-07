@@ -1,0 +1,26 @@
+@import "../../assets/css/Global.scss";
+
+.portfolio {
+  padding: 5vmin;
+  #items {
+    margin-top: 5vmin;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 600px));
+    grid-gap: 7.5vw 5vw;
+    justify-content: center;
+    :nth-child(3n + 2) #tech {
+      background-color: rgba($lagoon, 0.75);
+    }
+    :nth-child(3n + 1) #tech {
+      background-color: rgba($coral, 0.75);
+    }
+    :nth-child(3n + 0) #tech {
+      background-color: rgba($sun, 0.75);
+    }
+  }
+
+  .twotimes {
+    width: 2fr;
+    text-align: center;
+  }
+}

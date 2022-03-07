@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 30">
+<defs>
+<style>
+.cls-1,
+.cls-2,
+.cls-3,
+.cls-4{
+    font-size:25px;
+    stroke:#1d1d1b;
+    stroke-miterlimit:10;
+    stroke-width:0.5px;
+    font-family:TheBoldFont, The Bold Font;}
+.cls-3{
+    fill:#b90047;
+}
+.cls-2{
+    fill:#00b9a1;
+}
+.cls-1{
+    fill:#ffe23f;
+}
+.cls-4 {
+    fill:#fff;
+    stroke-width:1px;
+    color: #1d1d1b
+}
+.blink {
+    height:1px;
+    width: 6px;
+    animation: blink 1s steps(2, start) infinite;
+    }
+        @keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
+</style>
+</defs>
+<g id="Calque_2" data-name="Calque 2">
+<text class="cls-1" transform="translate(0 29.5)">ÉB</text>
+<text class="cls-2" transform="translate(1 28)">ÉB</text>
+<text class="cls-3" transform="translate(2 26.5)">ÉB</text>
+<text class="cls-4" transform="translate(3 25)">ÉB</text>
+<rect class="blink" x="30" y="28" />
+</g>
+</svg>

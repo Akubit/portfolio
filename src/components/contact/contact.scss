@@ -1,0 +1,58 @@
+@import "../../assets/css/Global.scss";
+
+.contact {
+  min-height: calc(100vh - 100px);
+  border-left: 60px solid;
+  border-image: linear-gradient(
+      to right,
+      $sun 20px,
+      $coral 20px 40px,
+      $lagoon 40px
+    )
+    0 0 0 60 stretch;
+  padding: 25px;
+
+  h2 {
+    max-width: 1111px;
+    margin: 2em auto;
+  }
+
+  form {
+    max-width: 700px;
+    width: 80%;
+    margin: 0 auto;
+    > input,
+    textarea {
+      width: 100%;
+      padding: 15px 20px;
+      margin-bottom: 15px;
+      background: white;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid $black;
+      transition: border-bottom-color 0.2s;
+      box-shadow: 0 2px 4px 0 rgba($black, 0.2);
+      font-family: "IBM Plex Mono";
+      &::placeholder {
+        color: lighten($black, 15%);
+        font-family: "IBM Plex Mono";
+      }
+      &:focus,
+      &:active {
+        border-bottom: 3px solid $lagoon;
+        border-image: linear-gradient(
+            to right,
+            $sun 33%,
+            $coral 33% 66%,
+            $lagoon 66%
+          )
+          0 0 3 stretch;
+        margin-bottom: 13px;
+      }
+    }
+    textarea {
+      min-height: 33vh;
+      font-size: 0.9rem;
+    }
+  }
+}
