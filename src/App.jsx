@@ -25,6 +25,10 @@ function App() {
   const handleToggle = () => {
     setMenu(!showMenu);  
   };
+
+  const menuItemClose = () => {
+    setMenu(false)
+  }
   return (
     <div className="App">
       <Router>
@@ -43,10 +47,10 @@ function App() {
                 <button onClick={handleToggle}>
                   Close
                 </button>
-              <NavLink activeClassName='is-active' to="/" exact className="nav-links">Intro</NavLink>
-                  <NavLink activeClassName='is-active' to="/about" className="nav-links">About</NavLink>
-                  <NavLink activeClassName='is-active' to="/portfolio" className="nav-links">Portfolio</NavLink>
-                  <NavLink activeClassName='is-active' to="/contact" className="nav-links">Contact</NavLink>
+                  <NavLink onClick={menuItemClose} activeClassName='is-active' to="/" exact className="nav-links">Intro</NavLink>
+                  <NavLink onClick={menuItemClose} activeClassName='is-active' to="/portfolio" className="nav-links">Portfolio</NavLink>
+                  <NavLink onClick={menuItemClose} activeClassName='is-active' to="/contact" className="nav-links">Contact</NavLink>
+                  <NavLink onClick={menuItemClose} activeClassName='is-active' to="/about" className="nav-links">About</NavLink>
               </ul>
           </nav>
           </div>
