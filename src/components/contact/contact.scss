@@ -54,5 +54,28 @@
       min-height: 33vh;
       font-size: 0.9rem;
     }
+    button {
+      min-width: 200px;
+      &::after {
+        content: "Send !";
+      }
+      &.is-sending {
+        &::after {
+          animation: loading 1s infinite linear;
+        }
+      }
+    }
+  }
+}
+
+@keyframes loading {
+  0% {
+    content: ".";
+  }
+  50% {
+    content: "..";
+  }
+  100% {
+    content: "...";
   }
 }
