@@ -1,15 +1,26 @@
 @import "../../assets/css/Global.scss";
 
 .about {
-  padding: 5% 5% 2.5% 10%;
+  padding: 2.5% 5% 2.5% 10%;
+  @include mobile {
+    padding: 25px;
+    margin: 0 auto;
+  }
 
   &-picture {
     float: left;
     text-align: center;
     padding-bottom: 50px;
+    @include mobile {
+      display: block;
+      float: unset;
+      margin: auto;
+      padding-bottom: 15px;
+    }
 
     img {
       max-width: 350px;
+      width: 75vw;
       margin: 25px;
       border: 5px solid $black;
       box-shadow: -10px 10px 0 $coral, -15px 15px 0 $black, -15px 5px $black,
@@ -19,7 +30,7 @@
       margin-bottom: 45px;
       grid-area: photo;
       @include mobile {
-        max-width: 100%;
+        max-width: 250px;
       }
     }
   }
@@ -43,7 +54,7 @@
     margin-top: 5em;
     display: grid;
     grid-column-gap: 3em;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: center;
     li {
       list-style-type: "> ";
@@ -55,11 +66,12 @@
       margin: 0 auto;
     }
     h2 {
+      width: 100%;
       padding: 10px;
       text-align: center;
       border-top: 3px solid $lagoon;
       border-bottom: 3px solid $coral;
-      //   text-shadow: -3px 3px $lagoon;
+      // text-shadow: -3px 3px $lagoon;
       margin: 1em auto;
     }
     h4 {

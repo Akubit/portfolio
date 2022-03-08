@@ -37,7 +37,7 @@ export const items = [
         "title": "Electron Color Picker",
         "tech": "ElectronJS, HTML/CSS, Javascript, API",
         "source": "Github",
-        "link": "https://github.com/Akubit/electron-color-picker",
+        "link": "https://github.com/Akubit/electronjs-color-picker",
     },
     {
         "id": 5,
@@ -45,7 +45,7 @@ export const items = [
         "title": "NesKoH",
         "tech": "Wordpress / Photoshop / Illustrator",
         "source": "neskoh.com",
-        "link": "https://github.com/Akubit/electron-color-picker",
+        "link": "https://neskoh.com",
     },
     {
         "id": 6,

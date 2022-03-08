@@ -1,6 +1,8 @@
 import './assets/css/App.scss';
 import logo from './assets/img/logo/logo.svg'
 
+import React,{ useState } from 'react';
+
 import {
   BrowserRouter as Router,
   Route,
@@ -18,6 +20,11 @@ import ScrollToTop from './assets/js/ScrollToTop';
 
 
 function App() {
+  const [showMenu, setMenu] = useState(false);
+
+  const handleToggle = () => {
+    setMenu(!showMenu);  
+  };
   return (
     <div className="App">
       <Router>
@@ -26,8 +33,16 @@ function App() {
           <div className="logo">
             <img src={logo} className="navbar-logo" alt="Élise Brodin - Front-end Web Developer" />
           </div>
+
           <nav className="navbar-nav">
-              <ul>
+              <div className="menu-mobile">
+                <button onClick={handleToggle}>
+                  Menu</button>
+                </div>
+              <ul className={showMenu ? "active" : ""}>
+                <button onClick={handleToggle}>
+                  Close
+                </button>
               <NavLink activeClassName='is-active' to="/" exact className="nav-links">Intro</NavLink>
                   <NavLink activeClassName='is-active' to="/about" className="nav-links">About</NavLink>
                   <NavLink activeClassName='is-active' to="/portfolio" className="nav-links">Portfolio</NavLink>
