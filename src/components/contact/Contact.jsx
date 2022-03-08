@@ -25,10 +25,10 @@ export default function Contact() {
         loading(true)
         e.preventDefault();
         send(
-            'service_q74bt0e',
-            'template_0ymb83s',
+            service_id,
+            template_id,
             orderDetails,
-            'user_0fNknb041yhrrjndTRWw2'
+            user_id
         ).then((response) => {
             loading(false)
             isSendMessage = 'success'
